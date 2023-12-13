@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Roboto&display=swap');
+
+:root{
+    --clr-blk:#000000;
+    --clr-w:#FFFFFF;
+}
+
+a{
+  text-decoration: none;
+}
+
+*,body{
+    font-family: 'League Gothic','League Spartan','Roboto', sans-serif;
+   
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+.template{
+    background-color: black;
+    /*Set The Height to html*/
+    /*Set The Width to html*/
+    overflow: hidden;
+}
+
+.container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  background-color: transparent;
+
+}
+
+/*MENU*//*THIS IS WHAT I ADDED*//*THIS IS WHAT I ADDED*//*THIS IS WHAT I ADDED*//*THIS IS WHAT I ADDED*//*THIS IS WHAT I ADDED*/
+
+body{
+    overflow-x: hidden;
+}
+
+#template-page1{
+    overflow: hidden;
+}
+
+#template-menu{
+    width: 100px;
+    height: 100px;
+    background-color: var(--clr-w);
+    border-radius: 50%;
+
+    position:relative ;
+    left:200%; /*50% DEFAULT , sa gitna ito*/
+    top:-200%;  /*50% DEFAULT , sa gitna ito*/
+    transform: translate(-50%,-50%) scale(26);
+   
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition:1s;
+}
+
+#template-box{
+    width: 60px;
+    height: 25px;
+    position:relative;
+}
+#menu{
+  font-size: 1px;
+  position:absolute;
+  font-family: 'League spartan';
+  letter-spacing: 0.2px;
+  left:-30%;
+  top:20%;
+  transform: rotate(-90deg);
+}
+.temp-box-text{
+    width: 25px;
+    height: 15px;
+    position:absolute;
+    left:20%;
+    top:20%;
+}
+
+.temp-box-text ul {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap:0.1rem;
+}
+.temp-box-text ul li {
+  font-size: 3px;
+  font-family: 'League spartan';
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  color: var(--clr-blk);
+}
+
+/*MENU*/ /*THIS IS WHAT I ADDED*//*THIS IS WHAT I ADDED*//*THIS IS WHAT I ADDED*//*THIS IS WHAT I ADDED*//*THIS IS WHAT I ADDED*/
+
+/*STYLE FOR HOME*/
+
+#container-page1{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+
+}
+
+nav{
+    position:absolute;
+    top:0%;
+    width: 100%;
+    background-color: transparent;
+    height: 100px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#nav-img{
+    height: 100px;
+    width: 100px;
+    
+}
+
+#nav-icon{
+
+    height: 70px;
+    width: 70px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 3;                       /*THIS IS WHAT I ADDRED*/
+}
+
+.hero{
+    color:var(--clr-w);
+}
+
+.hero div:nth-child(1){
+  font-size: 100px;
+   text-align: center;  
+   position:relative;    /*THIS IS WHAT I ADDED*/
+   top:-100px;           /*THIS IS WHAT I ADDED*/
+}
+
+.hero div:nth-child(2){
+  text-align: center;
+  font-family: 'League Spartan';
+  font-size: 36px;
+  letter-spacing: 0.5rem;
+  position:relative;       /*THIS IS WHAT I ADDED*/
+  top:-100px;              /*THIS IS WHAT I ADDED*/
+}
+
+#aboutMe span:nth-child(1){
+  font-family:'League Spartan';
+  font-size: 40px;
+   font-weight: 700;
+}
+
+#aboutMe span:nth-child(2){
+  display: block;
+  font-family: 'Roboto'; 
+  padding-top: 1%;
+}
+
+#mySkills span:nth-child(1){
+  font-family:'League Spartan';
+  font-size: 40px; 
+  font-weight: 700;
+}
+
+
+#template-page2{
+  height: 1350px;
+  background-color: var(--clr-w);
+
+}
+
+#container-page2{
+  height: 1350px; 
+  position:relative;
+  background-color: var(--clr-w);
+  
+
+}
+
+#aboutMe{
+  height: 210px;
+  width: 700px; 
+  position:absolute;
+  left: 50%;
+  transform:translateX(-50%);
+  top: 5%; 
+}
+
+#mySkills{
+  height: 220px;
+  width: 700px;
+  position:absolute;
+  left: 50%;
+  transform:translateX(-50%);
+  top: 110%; 
+}
+
+/*SKILLS CONTAINER */
+.skills-container{
+    height:180px;
+    width: 700px;
+    padding-top:10px;
+    opacity: 0;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    overflow:hidden;
+}
+
+.skills-container-box{
+    width: 130px;
+    height: 50px;
+    position:relative;
+}
+
+.conatiner-box-img{
+    width: 30px;
+    height: 30px;
+    position:absolute;
+    top:50%;
+    left:5%;
+    transform: translateY(-50%);
+}
+
+.container-box-txt{
+    position:relative;
+    top:50%;
+    left:35%;
+    transform: translateY(-50%);
+    font-family: 'Roboto';
+}
+/*SKILLS CONTAINER*/
+
+.project-container{
+  
+    position:absolute;
+    bottom: 18%;
+    height: 550px; 
+    width: 1520px;
+    left:-70%;
+    transform: translateX(-50%);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+
+.project-card{
+    width: 400px;
+    height: 550px;
+    background-color: black;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    cursor: pointer;
+    position:relative;
+}
+
+.project-title{
+    width:300px;
+    height: 50px;
+    color:var(--clr-w);
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 20px;
+    position:absolute;
+    top:5%;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.project-desc{
+    position:absolute;
+    height: 50px;
+    width:300px;
+    color:var(--clr-w);
+    top:17%;
+    left:50%;
+    transform: translateX(-50%);
+
+    font-family: 'Roboto';
+}
+
+.button-container{
+    position:absolute;
+    bottom: 5%;
+    width: 500px;
+    height: 100px;
+    background-color: transparent;
+    left:50%;
+    transform: translateX(-50%);
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    gap:2rem;
+}
+
+.button{
+    cursor: pointer;
+    border: none;
+    width: 200px;
+    height: 50px;
+    background-color: #D9D9D9;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnIcon{
+    width: 30px;
+    height: 30px;
+}
+
+.btnText{
+    font-family: 'Roboto';
+}
+/*FOOTER*/
+
+
+
+#footer-page3{
+  height: 400px;
+  background-color: var(--clr-blk);
+}
+
+#container-page3{
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+  background-color: var(--clr-blk);
+}
+
+.column{
+  width: 400px;
+  height: 400px;
+  
+}
+
+
+.c1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c1 ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:2rem;
+}
+
+.c1 ul a {
+  color:var(--clr-w);
+}
+
+.c1 ul li {
+  list-style: none;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+.c2{
+  display: flex;
+  align-items: 
+  center; justify-content:
+  center; flex-direction:
+  column; gap: 2rem;
+}
+/*FOOTER*/
+
+
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+
+  .project-container{
+      height: 550px; 
+      width: 1250px;
+  }
+
+  #container-page3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  #template-box{
+    width: 30px;        /*THIS IS WHAT I ADDED*/
+    height: 25px;         /*THIS IS WHAT I ADDED*/
+    position:relative;    /*THIS IS WHAT I ADDED*/
+}                       /*THIS IS WHAT I ADDED*/
+
+  #template-page2{
+    height: 2500px;
+  }
+
+  #container-page2{
+    height: 2500px;
+  }
+
+  .project-container{
+    top:24%;
+    height: 1700px; 
+    width: 1005px;
+
+    flex-direction: column;
+  }
+
+  .button-container{
+    bottom:2%;
+  }
+  #aboutMe{
+    top:3%;
+  }
+
+  #mySkills{
+    bottom:-10px;
+  }
+
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .project-container{ 
+    width: 750px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+
+  #template-box{               /*THIS IS WHAT I ADDED*/
+    width: 20px;                /*THIS IS WHAT I ADDED*/
+    height: 25px;                 /*THIS IS WHAT I ADDED*/
+    position:relative;            /*THIS IS WHAT I ADDED*/
+}
+
+  .project-container{ 
+    width: 630px;
+  }
+
+  #aboutMe{
+    width: 630px;
+  }
+
+  #mySkills{
+    width: 630px;
+  }
+  
+  .skills-container{
+    width: 630px;
+  }
+
+  #footer-page3{
+    height: 350px;
+  }
+
+  #container-page3{
+    height: 350px;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .column{
+    height: 100px;
+  }
+
+
+}
+
+/* sm */
+@media (max-width: 650px) {
+  .container {
+    max-width: 475px;
+  }
+
+  #menu{             /*THIS IS WHAT I ADDED*/
+    font-size: 1px;    /*THIS IS WHAT I ADDED*/
+    left:-15%;             /*THIS IS WHAT I ADDED*/
+  }                         /*THIS IS WHAT I ADDED*/
+
+  .temp-box-text ul li {           /*THIS IS WHAT I ADDED*/
+    font-size: 2px;               /*THIS IS WHAT I ADDED*/
+    letter-spacing: 0.5px;        /*THIS IS WHAT I ADDED*/
+  }                               /*THIS IS WHAT I ADDED*/
+
+  #template-page2{
+    height: 2700px;
+  }
+
+  #container-page2{
+    height: 2700px;
+  }
+
+  .project-container{ 
+    top:27%;
+    width: 475px;
+  }
+
+  #aboutMe{
+    width: 475px;
+    height: 300px;
+  }
+
+  #mySkills{
+    width: 475px;
+    top: 130%; 
+  }
+  .skills-container{
+    width: 475px;
+  }
+  
+  .column{
+    width: 475px;
+  }
+}
+
+/* xs */
+@media (max-width: 495px) {
+  .container {
+    max-width: 400px;
+  }
+
+  #template-page2{
+    height: 3000px;
+  }
+
+  #container-page2{
+    height: 3000px;
+    width: 350px;
+  }
+
+  #aboutMe{
+    width: 300px;
+  }
+
+  #mySkills{
+    width: 300px;
+
+  }
+  
+  .skills-container{
+    width: 300px;
+    height: 280px;
+    top:160%;
+    
+  }
+
+  .project-container{ 
+    bottom: 100%;
+    width: 400px;
+  }
+
+  .project-card{
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+  }
+
+  .project-title,
+  .project-desc{
+    font-size: 18px;
+    left:60%;
+  }
+
+
+  .button-container{
+    width: 300px;
+    height: 400px;
+    flex-direction: column;
+  }
+
+  .button{
+    width: 300px;
+  }
+
+  .column{
+    width: 300px;
+  }
+}

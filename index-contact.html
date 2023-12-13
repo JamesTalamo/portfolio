@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Talamo Portfolio</title>
+    <link rel="icon" href="images/rpLogoBlack.svg">
+    <link rel="stylesheet" href="style-contact.css">
+</head>
+<body>
+
+
+    <div class="template" id="template-page1" style="height: 950px; overflow: hidden;">
+
+        <div id="template-menu"> <!--NAKA RELATIVE TO NGAYON, YUNG NAV AND YUNG GITNA NG HERO CONTAINER NEED I ADJUST, KASI NAKARELATIVE, BUMABA YUNG NAV AT CONTENT SA LOOB-->
+            <div id="template-box">
+                <div class="temp-box-text">
+                    <span id="menu">MENU</span>
+                    <ul>
+                        <a href="index-home.html"><li>HOME</li></a>
+                        <a href="index-projects.html"><li>PROJECTS</li></a>
+                        <a href="index-aboutme.html"><li>ABOUT</li></a>
+                        <a href="index-contact.html"><li>CONTACT</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="container-page1" style="height: 950px; position:relative; overflow: hidden;">
+            <nav>
+                <img src="images/rpLogoWhitelogo.svg" id="nav-img" style="cursor: pointer;"onclick="window.location.href='index-home.html'">
+                <div id="nav-icon"><img src="images/icon.svg"></div>
+            </nav>
+
+            <div class="hero">
+                <div style="transition:2s ease-in-out; position:relative; left:-1500px; ">CONTACT ME</div>
+                <div tyle="transition:2s ease-in-out; position:relative; right:-1500px;">LETS CONNECT !</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="template" id='template-page2'>
+        <div class="container" id="container-page2" style="overflow: hidden;">
+
+                
+            <div class="container-txt">
+                <span>Contact Me</span>
+
+                <div class="box">
+                    <label>Name</label>
+                    <input type="text" placeholder="Your name">
+                </div>
+
+                <div class="box">
+                    <label>Email</label>
+                    <input type="text" placeholder="example@email.com">
+                </div>
+                <div class="box">
+                    <label>Email</label>
+                    <input type="text" id="input3" placeholder="Hello, my name is....">
+                </div>
+            </div>
+
+
+
+
+
+            <div class="button-container">
+                <button class="button btn2">
+                    <img src="images/btnarow.svg" class="btnIcon">
+                    <div class="btnText">Send Message</div>
+                </button>
+            </div>
+
+
+
+        </div>
+    </div>
+    
+
+    <div class="template" id="footer-page3" >
+        <div class="container" id="container-page3">
+
+            <div class="column c1">
+                <ul>
+                    <a href="index-projects.html"><li>PROJECT</li></a>
+                    <a href="index-aboutme.html"><li>ABOUT</li></a>
+                    <a href="index-contact.html"><li>CONTACT</li></a>
+                </ul>
+            </div>
+
+            <div class="column c2">
+                <div style="color: var(--clr-w); font-family: 'Roboto'; font-weight: bold;">Jamestalamo4@gmail.com</div>
+                <div style="color: var(--clr-w); font-family: 'Roboto'; font-weight: bold;">+63 949 739 0051</div>
+            </div>
+
+            <div class="column c3" style="display: flex; align-items: center; justify-content: center;">
+                <img src="images/rpLogoWhitelogo.svg" style="cursor: pointer; " onclick="window.location.href='index-home.html'">
+            </div>
+
+        </div>
+    </div>
+    <script src="js-contact.js"></script>
+</body>
+</html>
+
